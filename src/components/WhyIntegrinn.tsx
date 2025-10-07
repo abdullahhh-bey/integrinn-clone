@@ -21,7 +21,7 @@ const stats = [
 
 export const WhyIntegrinn = () => {
   return (
-    <section className="py-24 px-4 md:px-6 relative overflow-hidden">
+    <section id="about" className="py-24 px-4 md:px-6 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
       

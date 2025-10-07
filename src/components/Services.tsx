@@ -22,7 +22,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-24 px-4 md:px-6 relative">
+    <section id="services" className="py-24 px-4 md:px-6 relative">
       <div className="container">
         <div className="mb-16 animate-slide-up">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">

@@ -18,32 +18,38 @@ export const UIShowcase = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <div className="lg:col-span-1 space-y-6">
-            <div className="rounded-2xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(193,100%,50%/0.2)] group animate-slide-up">
-              <img 
-                src={showcase1} 
-                alt="Team collaboration" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <div className="lg:col-span-1 space-y-8">
+            <div className="rounded-3xl overflow-hidden border-2 border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_hsl(193,100%,50%/0.3)] group animate-slide-up bg-card/30 backdrop-blur-sm">
+              <div className="aspect-[4/3] overflow-hidden">
+                <img 
+                  src={showcase1} 
+                  alt="Team collaboration on modern interface" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
             </div>
           </div>
 
-          <div className="lg:col-span-2 space-y-6">
-            <div className="rounded-2xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(193,100%,50%/0.2)] group animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <img 
-                src={showcase2} 
-                alt="Dashboard interface" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+          <div className="lg:col-span-2 space-y-8">
+            <div className="rounded-3xl overflow-hidden border-2 border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_hsl(193,100%,50%/0.3)] group animate-slide-up bg-card/30 backdrop-blur-sm" style={{ animationDelay: '0.1s' }}>
+              <div className="aspect-[16/9] overflow-hidden">
+                <img 
+                  src={showcase2} 
+                  alt="Professional analytics dashboard interface" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
             </div>
 
-            <div className="rounded-2xl overflow-hidden border border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_30px_hsl(193,100%,50%/0.2)] group animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <img 
-                src={showcase3} 
-                alt="Mobile applications" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+            <div className="rounded-3xl overflow-hidden border-2 border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_40px_hsl(193,100%,50%/0.3)] group animate-slide-up bg-card/30 backdrop-blur-sm" style={{ animationDelay: '0.2s' }}>
+              <div className="aspect-[16/9] overflow-hidden">
+                <img 
+                  src={showcase3} 
+                  alt="Mobile application design showcase" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              </div>
             </div>
           </div>
         </div>

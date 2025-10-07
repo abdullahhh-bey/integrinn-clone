@@ -11,7 +11,7 @@ const industries = [
 
 export const Industries = () => {
   return (
-    <section className="py-24 px-4 md:px-6 relative overflow-hidden">
+    <section id="industries" className="py-24 px-4 md:px-6 relative overflow-hidden">
       {/* Background glow effect */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
       

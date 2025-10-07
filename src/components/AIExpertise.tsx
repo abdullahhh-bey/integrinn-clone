@@ -21,7 +21,7 @@ const aiServices = [
 
 export const AIExpertise = () => {
   return (
-    <section className="py-24 px-4 md:px-6 relative overflow-hidden">
+    <section id="ai" className="py-24 px-4 md:px-6 relative overflow-hidden">
       {/* Background glow effect */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-accent/20 rounded-full blur-[120px]" />
       
