@@ -62,13 +62,21 @@ export const Compliance = () => {
                 }}
               >
                 <div className="group relative">
-                  <div className="w-24 h-24 rounded-xl bg-card/80 backdrop-blur-sm border-2 border-border/50 hover:border-primary/50 flex flex-col items-center justify-center gap-1 transition-all duration-300 hover:shadow-[0_0_30px_hsl(193,100%,50%/0.3)] cursor-pointer">
-                    <item.icon className="w-7 h-7 text-primary group-hover:scale-110 transition-transform" />
-                    <span className="text-xs font-semibold">{item.label}</span>
+                  <div className="w-28 h-28 rounded-2xl bg-gradient-to-br from-card/90 to-card/70 backdrop-blur-md border-2 border-primary/30 hover:border-primary/70 flex flex-col items-center justify-center gap-2 transition-all duration-300 hover:shadow-[0_0_40px_hsl(193,100%,50%/0.4)] hover:scale-110 cursor-pointer">
+                    <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <item.icon className="w-6 h-6 text-primary group-hover:scale-125 transition-transform" />
+                    </div>
+                    <span className="text-xs font-bold text-foreground">{item.label}</span>
                   </div>
-                  {/* Tooltip */}
-                  <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 w-40 p-2 bg-card/95 backdrop-blur-sm border border-border/50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                    <p className="text-xs text-center text-muted-foreground">{item.description}</p>
+                  
+                  {/* Enhanced Tooltip with better visibility */}
+                  <div className="absolute top-full mt-3 left-1/2 -translate-x-1/2 w-48 p-3 bg-card/98 backdrop-blur-lg border-2 border-primary/50 rounded-xl shadow-[0_8px_30px_hsl(193,100%,50%/0.3)] opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-300 pointer-events-none z-50">
+                    <div className="text-center">
+                      <p className="text-xs font-semibold text-primary mb-1">{item.label}</p>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{item.description}</p>
+                    </div>
+                    {/* Tooltip arrow */}
+                    <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-transparent border-b-primary/50" />
                   </div>
                 </div>
               </div>
