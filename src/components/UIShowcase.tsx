@@ -1,21 +1,15 @@
-import uiMock1 from "@/assets/ui-mock-1.jpg";
-import uiMock2 from "@/assets/ui-mock-2.jpg";
-import uiMock3 from "@/assets/ui-mock-3.jpg";
-import uiMock4 from "@/assets/ui-mock-4.jpg";
-import uiMock5 from "@/assets/ui-mock-5.jpg";
-import uiMock6 from "@/assets/ui-mock-6.jpg";
-import uiMock7 from "@/assets/ui-mock-7.jpg";
-import uiMock8 from "@/assets/ui-mock-8.jpg";
+import uiReal1 from "@/assets/ui-real-1.jpg";
+import uiReal2 from "@/assets/ui-real-2.jpg";
+import uiReal3 from "@/assets/ui-real-3.jpg";
+import uiReal4 from "@/assets/ui-real-4.jpg";
+import uiReal5 from "@/assets/ui-real-5.jpg";
 
 const showcaseItems = [
-  { image: uiMock1, position: "top-8 left-8", size: "w-48 h-64", rotation: "-rotate-6" },
-  { image: uiMock2, position: "top-16 left-1/4", size: "w-56 h-40", rotation: "rotate-3" },
-  { image: uiMock3, position: "top-12 right-8", size: "w-52 h-48", rotation: "rotate-6" },
-  { image: uiMock4, position: "top-1/2 right-1/4", size: "w-48 h-52", rotation: "-rotate-3" },
-  { image: uiMock5, position: "bottom-1/4 left-12", size: "w-44 h-48", rotation: "rotate-6" },
-  { image: uiMock6, position: "bottom-16 left-1/3", size: "w-60 h-48", rotation: "-rotate-6" },
-  { image: uiMock7, position: "bottom-8 right-1/4", size: "w-56 h-44", rotation: "rotate-3" },
-  { image: uiMock8, position: "top-1/2 right-12", size: "w-44 h-44", rotation: "-rotate-12" },
+  { image: uiReal1, position: "top-16 left-8", size: "w-56 h-48", rotation: "-rotate-3" },
+  { image: uiReal2, position: "top-20 right-8", size: "w-52 h-44", rotation: "rotate-6" },
+  { image: uiReal3, position: "bottom-24 left-16", size: "w-48 h-52", rotation: "rotate-3" },
+  { image: uiReal4, position: "bottom-16 right-12", size: "w-60 h-48", rotation: "-rotate-6" },
+  { image: uiReal5, position: "top-1/2 -translate-y-1/2 left-1/4", size: "w-52 h-44", rotation: "rotate-12" },
 ];
 
 export const UIShowcase = () => {
