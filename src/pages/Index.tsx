@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { CoreExpertise } from "@/components/CoreExpertise";
-import { Services } from "@/components/Services";
+import  Services  from "../components/Services"
 import { Industries } from "@/components/Industries";
 import { AIExpertise } from "@/components/AIExpertise";
-import { UIShowcase } from "@/components/UIShowcase";
+import  UIShowcase from "@/components/UIShowcase";
 import { NonTechFounder } from "@/components/NonTechFounder";
 import { Compliance } from "@/components/Compliance";
 import { WhyIntegrinn } from "@/components/WhyIntegrinn";
