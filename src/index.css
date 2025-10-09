@@ -55,5 +55,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'SF Pro Display', 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'system-ui', sans-serif;
+    font-weight: 500;
   }
 }
