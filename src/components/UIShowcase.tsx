@@ -41,11 +41,11 @@ const showcaseItems = [
 
 export default function UIShowcase() {
   return (
-    <section className="py-14 px-4 md:px-6 relative bg-black min-h-screen flex items-center overflow-hidden">
+    <section className="py-14 px-4 md:px-6 relative bg-background min-h-screen flex items-center overflow-hidden">
       <div className="container relative mx-auto">
         {/* Center content */}
         <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-          <div className="text-center max-w-3xl text-white px-4">
+          <div className="text-center max-w-3xl text-foreground px-4">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-2 leading-tight">
               Beautiful &
             </h2>
@@ -55,7 +55,7 @@ export default function UIShowcase() {
             >
               functional UI
             </h3>
-            <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               A digital product without proper UX and compelling design has lower chances for success. 
               Our design process are tailored to make your app simple, enchanting and easy to use.
             </p>
