@@ -27,8 +27,10 @@ export const Hero = () => {
           </div>
 
           {/* Right: Image (50% space) */}
-          <div className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-end">
-            <img src={heroBg} alt="banner" className="w-1/2 h-full object-contain object-right" />
+          <div className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center">
+            <div className="w-[70%] h-full flex items-center justify-center">
+              <img src={heroBg} alt="banner" className="w-full h-full object-contain object-center" />
+            </div>
           </div>
         </div>
       </div>
