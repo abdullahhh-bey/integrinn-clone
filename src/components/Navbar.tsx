@@ -14,14 +14,12 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold">
-            <span className="bg-gradient-text bg-clip-text text-transparent">
-              Integrinn
-            </span>
+          <a href="#" className="text-lg font-bold text-foreground">
+            Integrinn
           </a>
 
           {/* Desktop Navigation */}
@@ -30,17 +28,16 @@ export const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-primary hover:opacity-90 transition-all duration-300 text-white font-semibold shadow-glow hover:shadow-[0_0_40px_hsl(193,100%,50%/0.3)]">
+            <Button className="border border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all duration-300 font-semibold px-4 py-2">
               Let's Talk
             </Button>
           </div>
@@ -49,11 +46,12 @@ export const Navbar = () => {
           <button
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
+              <X className="w-6 h-6 text-foreground" />
             ) : (
-              <Menu className="w-6 h-6" />
+              <Menu className="w-6 h-6 text-foreground" />
             )}
           </button>
         </div>
@@ -72,7 +70,7 @@ export const Navbar = () => {
                   {link.name}
                 </a>
               ))}
-              <Button className="bg-gradient-primary hover:opacity-90 transition-all duration-300 text-white font-semibold w-full">
+              <Button className="border border-primary text-primary bg-transparent hover:bg-primary hover:text-white transition-all duration-300 font-semibold w-full">
                 Let's Talk
               </Button>
             </div>
