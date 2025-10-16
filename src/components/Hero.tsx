@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -27,7 +26,7 @@ export const Hero = () => {
             </Button>
           </div>
 
-          {/* Right: Image (50% space) */}
+          {/* Right: Image (70% of the column) */}
           <div className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center">
             <div className="w-[70%] h-full flex items-center justify-center">
               <img src={heroBg} alt="banner" className="w-full h-full object-contain object-center" />
