@@ -11,18 +11,18 @@ export const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-[calc(100vh-64px)]">
           {/* Left: Text */}
           <div className="relative z-10 py-12">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="block">Build Smarter ERPs</span>
-              <span className="block bg-gradient-text bg-clip-text text-transparent">with Integrinn Workday</span>
-              <span className="block">Solutions</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <span className="block text-primary">Build Smarter ERPs</span>
+              <span className="block"><span className="text-primary">with Integrinn</span> <span className="text-foreground">Workday</span></span>
+              <span className="block text-foreground">Solutions</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Transform your business operations with cutting-edge ERP solutions powered by Workday expertise
+              We design ERP systems that simplify workflows, integrate finance and HR, and scale with your business growth.
             </p>
 
-            <Button size="lg" className="border border-primary text-white bg-primary hover:opacity-95 transition-all duration-300 font-semibold px-8 py-3 shadow-glow">
-              Get Started <ArrowRight className="ml-2" />
+            <Button size="lg" className="bg-primary text-white px-6 py-3 rounded-md shadow-glow font-semibold">
+              Get a Quote
             </Button>
           </div>
 
