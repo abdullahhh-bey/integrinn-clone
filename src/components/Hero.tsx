@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+
+// Using provided Frame image URL from user attachments
+const heroBg = "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2Fe179cb12a0aa4eccb15d5ac9e9bbbdd2?format=webp&width=1600";
 
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        <img 
-          src={heroBg} 
-          alt="" 
+        <img
+          src={heroBg}
+          alt=""
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background"></div>
