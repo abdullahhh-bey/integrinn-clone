@@ -5,17 +5,17 @@ const items = [
   {
     title: "Develop an MVP",
     description: "We have released dozens of MVPs and full-scale products that now have millions of users worldwide.",
-    img: "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2F3243d06eef0548358432f8d00560c440?format=webp&width=600",
+    img: "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2Fdc3a182a6fe849f4b6d362aa863ae22e?format=webp&width=600",
   },
   {
     title: "Create a design",
     description: "We specialize in data-rich platforms, always going UX-first and delivering polished visual systems.",
-    img: "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2F3243d06eef0548358432f8d00560c440?format=webp&width=600",
+    img: "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2F3d0b04f6a3014791bee1b650df5ea8ff?format=webp&width=600",
   },
   {
     title: "Expand your team",
     description: "We hire only the top 1% of the recruitment funnel to offer you the best talent for long-term growth.",
-    img: "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2F3243d06eef0548358432f8d00560c440?format=webp&width=600",
+    img: "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2F72ce90769cb1476cb3897b43598162de?format=webp&width=600",
   },
 ];
 
