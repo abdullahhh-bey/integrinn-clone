@@ -38,16 +38,12 @@ export default function WhatCanWeDo() {
 
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           {items.map((item, idx) => (
-            <div key={idx} className="rounded-xl bg-card/50 border border-border/50 p-6 hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all">
-              <div className="flex items-start gap-4">
-                <div className="w-16 h-16 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <img src={item.img} alt="" className="w-10 h-10 object-contain" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </div>
+            <div key={idx} className="rounded-xl bg-card/50 border border-border/50 p-6 hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all flex flex-col items-center text-center">
+              <h3 className="font-semibold text-lg mb-4 w-full">{item.title}</h3>
+              <div className="w-full flex items-center justify-center mb-4">
+                <img src={item.img} alt="" className="max-w-[180px] max-h-[140px] object-contain" />
               </div>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
             </div>
           ))}
         </div>
