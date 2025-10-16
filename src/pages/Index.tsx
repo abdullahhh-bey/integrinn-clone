@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { CoreExpertise } from "@/components/CoreExpertise";
 import  Services  from "../components/Services"
 import { Industries } from "@/components/Industries";
+import WhatCanWeDo from "@/components/WhatCanWeDo";
 import { AIExpertise } from "@/components/AIExpertise";
 import  UIShowcase from "@/components/UIShowcase";
 import { NonTechFounder } from "@/components/NonTechFounder";
