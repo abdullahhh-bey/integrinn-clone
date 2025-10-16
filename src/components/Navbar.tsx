@@ -19,10 +19,8 @@ export const Navbar = () => {
         <div className="flex items-center h-16">
           {/* Logo - left */}
           <div className="flex items-center">
-            <a href="#" className="text-lg font-bold text-foreground flex items-center gap-3">
-              {/* small logo mark */}
-              <span className="w-8 h-8 rounded-full bg-gradient-primary inline-block" />
-              <span>Integrinn</span>
+            <a href="#" className="flex items-center gap-3">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2Fa17f6195f1ee4ab5b5874680cc69a7a7?format=webp&width=200" alt="Integrinn logo" className="h-10 w-auto object-contain" />
             </a>
           </div>
 
