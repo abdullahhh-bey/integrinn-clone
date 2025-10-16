@@ -31,7 +31,7 @@ export const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm font-medium text-muted-foreground transition transform duration-300 hover:-translate-y-1 hover:scale-105 hover:text-primary"
                 >
                   {link.name}
                 </a>
@@ -71,7 +71,7 @@ export const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-sm font-medium text-muted-foreground transition transform duration-300 hover:-translate-y-1 hover:scale-105 hover:text-primary"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
