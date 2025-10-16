@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden pt-16">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-[calc(100vh-64px)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 min-h-[calc(100vh-64px)]">
           {/* Left: Text */}
           <div className="relative z-10 py-12">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
