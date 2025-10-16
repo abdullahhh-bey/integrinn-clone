@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 // Using provided Frame image URL from user attachments
 const heroBg = "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2Fe179cb12a0aa4eccb15d5ac9e9bbbdd2?format=webp&width=1600";
