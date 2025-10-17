@@ -45,23 +45,23 @@ export default function Services() {
   };
 
   return (
-    <section className="min-h-screen py-20 px-4 md:px-6 bg-black text-white overflow-hidden">
+    <section className="min-h-screen py-20 px-4 md:px-6 bg-background text-foreground overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-16 gap-12">
           <div className="lg:w-1/2">
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
-              <span className="text-white">We have done </span>
+              <span className="text-foreground">We have done </span>
               <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">good</span>
               <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent ms-4">things</span>
             </h2>
           </div>
           <div className="lg:w-1/2 max-w-xl">
-            <p className="text-gray-400 text-base leading-relaxed mb-4">
+            <p className="text-muted-foreground text-base leading-relaxed mb-4">
               Integrinn helps to cover HIPPA, GDPR and other major
               regulations you might need for building telemedicine app.
             </p>
-            <p className="text-gray-400 text-base leading-relaxed">
+            <p className="text-muted-foreground text-base leading-relaxed">
               All third-party software will also be compliant. We
               document all process.
             </p>

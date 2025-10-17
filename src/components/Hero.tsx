@@ -1,57 +1,37 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { Button } from "@/components/ui/button";
+
+// Using provided Frame image URL from user attachments
+const heroBg = "https://cdn.builder.io/api/v1/image/assets%2Fcb8e479c60404215aabbf36ee0d73e89%2Fe179cb12a0aa4eccb15d5ac9e9bbbdd2?format=webp&width=1600";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        <img 
-          src={heroBg} 
-          alt="" 
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background"></div>
-        
-        {/* Animated particles */}
-        <div className="absolute inset-0">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-primary rounded-full animate-particle opacity-0"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${3 + Math.random() * 2}s`,
-              }}
-            />
-          ))}
-        </div>
-      </div>
+    <section className="relative min-h-screen overflow-hidden pt-16">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 min-h-[calc(100vh-64px)]">
+          {/* Left: Text */}
+          <div className="relative z-10 py-12">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+              <span className="block text-primary">Build Smarter ERPs</span>
+              <span className="block"><span className="text-primary">with Integrinn</span> <span className="text-foreground">Workday</span></span>
+              <span className="block text-foreground">Solutions</span>
+            </h1>
 
-      {/* Content */}
-      <div className="container relative z-10 px-4 md:px-6 animate-slide-up">
-        <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-            <span className="block">Build Smarter ERPs</span>
-            <span className="block bg-gradient-text bg-clip-text text-transparent">
-              with Integrinn Workday
-            </span>
-            <span className="block">Solutions</span>
-          </h1>
-          
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-            Transform your business operations with cutting-edge ERP solutions powered by Workday expertise
-          </p>
-          
-          <Button 
-            size="lg" 
-            className="bg-gradient-primary hover:opacity-90 transition-all duration-300 text-white font-semibold px-8 shadow-glow hover:shadow-[0_0_80px_hsl(193,100%,50%/0.4)]"
-          >
-            Get Started <ArrowRight className="ml-2" />
-          </Button>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
+              We design ERP systems that simplify workflows, integrate finance and HR, and scale with your business growth.
+            </p>
+
+            <Button size="lg" className="bg-primary text-white px-6 py-3 rounded-md shadow-glow font-semibold">
+              Get a Quote
+            </Button>
+          </div>
+
+          {/* Right: Image (70% of the column) */}
+          <div className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center">
+            <div className="w-[70%] h-full flex items-center justify-center">
+              <img src={heroBg} alt="banner" className="w-full h-full object-contain object-center" />
+            </div>
+          </div>
         </div>
       </div>
 
