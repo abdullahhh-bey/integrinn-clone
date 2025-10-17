@@ -39,9 +39,9 @@ export default function WhatCanWeDo() {
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           {items.map((item, idx) => (
             <div key={idx} className="rounded-xl bg-card/50 border border-border/50 p-8 min-h-[380px] hover:shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all flex flex-col items-center text-center">
-              <h3 className="font-extrabold text-xl mb-4 w-full tracking-tight">{item.title}</h3>
+              <h3 className="font-semibold text-lg mb-4 w-full">{item.title}</h3>
               <div className="w-full flex items-center justify-center mb-6 flex-grow">
-                <img src={item.img} alt="" className="w-full max-w-[360px] max-h-[300px] object-contain" />
+                <img src={item.img} alt="" className="w-full max-w-[420px] max-h-[340px] object-contain" />
               </div>
               <p className="text-sm text-muted-foreground">{item.description}</p>
             </div>
